@@ -1,0 +1,2 @@
+insert into client(id, firstname, lastname, secondname, birthday) values  (1001, 'Aleksey', 'Alekseev', 'Alekseevich', parsedatetime('11-11-2012', 'dd-MM-yyyy'));
+insert into client(id, firstname, lastname, secondname, birthday) values  (1002, 'Ivan', 'Ivanov', 'Ivanovich', parsedatetime('17-09-2012', 'dd-MM-yyyy'));
