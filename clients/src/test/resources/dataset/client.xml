@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<dataset>
+    <client id="100" firstname="Alex" lastname="Alex2" secondName="Alex3" birthday="10.11.1012"/>
+    <client id="200" firstname="Ivan" lastname="Ivan2" secondName="Ivan3" birthday="10.11.1011"/>
+
+</dataset>
