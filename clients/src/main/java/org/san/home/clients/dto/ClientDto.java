@@ -13,6 +13,7 @@ import java.time.LocalDate;
 @EqualsAndHashCode
 @AllArgsConstructor
 public class ClientDto {
+    @NotNull
     private Long  id;
 
     @NotNull
@@ -28,7 +29,6 @@ public class ClientDto {
     private String secondName;
 
     @Past
-    @JsonFormat
-            (shape = JsonFormat.Shape.STRING, pattern = "dd.MM.yyyy")
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd.MM.yyyy")
     private LocalDate birthDay;
 }

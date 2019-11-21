@@ -49,9 +49,9 @@ public class ClientControllerTest {
     public void getAll() throws Exception {
         this.mockMvc.perform(get("http://localhost:"+ port + "/clients")).andDo(print())
                 .andExpect(status().isOk())
-                .andExpect(jsonPath("$", hasSize(2)))
-                .andExpect(jsonPath("$[*].id", containsInAnyOrder(100, 200)))
-                .andExpect(jsonPath("$[*].links[*].rel", containsInAnyOrder("self", "self")));
+                .andExpect(jsonPath("$._embedded.clients", hasSize(2)))
+                .andExpect(jsonPath("$._embedded.clients[*].firstName", containsInAnyOrder("Ivan", "Alex")));
+        ;
     }
 /**
     @Test
